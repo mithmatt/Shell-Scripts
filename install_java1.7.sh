@@ -1,3 +1,5 @@
+#!/bin/bash
+
 mkdir -p ~/downloads
 
 # Get Oracle JDK 1.7

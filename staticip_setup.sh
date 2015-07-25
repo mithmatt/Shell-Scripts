@@ -1,3 +1,4 @@
+#!/bin/bash
 LNO=$(ifconfig | grep -n "eth0" | awk 'BEGIN{FS=":"}; {print $1}')
 IPADDR=$(ifconfig | awk -v lnr="$(($LNO+1))" 'NR==lnr {print $2}' | cut -d ':' -f2)
 
